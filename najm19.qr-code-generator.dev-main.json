@@ -8,14 +8,12 @@
                     ]
                 },
                 "copy-from-recipe": {
-                    "config/": "%CONFIG_DIR%",
-                    "src/": "%SRC_DIR%/"
+                    "config/": "%CONFIG_DIR%"
                 },
                 "post-install-output": [
                     "  * Your APP is almost ready: Thanks for using najm19/qr-code-generator"
                 ],
                 "files": {
-                    "config/routes/qr_generator.yaml": "config/routes/qr_generator.yaml",
                     "config/routes/qr_generator_bundle.yaml": {
                         "contents": [
                             "qr_generator:",
@@ -25,21 +23,9 @@
                         ],
                         "executable": false
                     }
-                },
-                "aliases": [
-                    "qr",
-                    "codes"
-                ],
-                "env": {
-                    "QR_SECRET_KEY": "%kernel.project_dir%/%CONFIG_DIR%/jwt/private.pem",
-                    "QR_PUBLIC_KEY": "%kernel.project_dir%/%CONFIG_DIR%/jwt/public.pem",
-                    "QR_PASSPHRASE": "%generate(secret, 32)%"
-                },
-                "gitignore": [
-                    "/%CONFIG_DIR%/jwt/*.pem"
-                ]
+                }
             },
-            "ref": "7405f3af1312d1f9121afed4dddef636c6c7ff00"
+            "ref": "7405f3af1312d1f9121afed4dddef636c6c7ffdd2255"
         }
     }
 }

@@ -1,4 +1,0 @@
-qr_generator:
-    path: /qr/generate
-    controller: QrGeneratorBundle\Controller\QrGeneratorController::generate
-    methods: [GET]
