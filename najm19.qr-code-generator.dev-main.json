@@ -12,8 +12,10 @@
                 },
                 "post-install-output": [
                     "  * Your APP is almost ready: Thanks for using najm19/qr-code-generator"
-                ],
-                "files": {
+                ]
+
+            },
+            "files": {
                     "config/routes/qr_generator_bundle.yaml": {
                         "contents": [
                             "qr_generator:",
@@ -23,9 +25,8 @@
                         ],
                         "executable": false
                     }
-                }
-            },
-            "ref": "meagainfucking"
+                },
+            "ref": "meagainfuckingwomens"
         }
     }
 }
