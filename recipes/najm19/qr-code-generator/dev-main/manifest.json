@@ -7,5 +7,14 @@
     },
     "files": {
       "config/routes/qr_generator.yaml": "config/routes/qr_generator.yaml"
-    }
+    },
+    "aliases": ["qr", "codes"],
+    "env": {
+        "QR_SECRET_KEY": "%kernel.project_dir%/%CONFIG_DIR%/jwt/private.pem",
+        "QR_PUBLIC_KEY": "%kernel.project_dir%/%CONFIG_DIR%/jwt/public.pem",
+        "QR_PASSPHRASE": "%generate(secret, 32)%"
+    },
+    "gitignore": [
+        "/%CONFIG_DIR%/jwt/*.pem"
+    ]
 }
