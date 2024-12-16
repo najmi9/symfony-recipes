@@ -1,7 +1,7 @@
 {
     "packages": {
       "najm19/qr-code-generator": {
-        "dev-master": {
+        "dev-main": {
           "manifest": "recipes/najm19/qr-code-generator/dev-main/manifest.json"
         }
       }
