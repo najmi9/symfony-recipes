@@ -1,9 +1,14 @@
 {
-    "packages": {
-      "najm19/qr-code-generator": {
-        "dev-main": {
-          "manifest": "recipes/najm19/qr-code-generator/dev-main/manifest.json"
-        }
-      }
-    }
+  "recipes": {
+      "najm19/qr-code-generator": [
+          "dev-main"
+      ]
+  },
+  "branch": "main",
+  "is_contrib": true,
+  "_links": {
+      "repository": "github.com/najmi9/symfony-recipes",
+      "origin_template": "{package}:{version}@github.com/najmi9/symfony-recipes:main",
+      "recipe_template": "https://api.github.com/repos/najmi9/symfony-recipes/contents/{package_dotted}.{version}.json"
   }
+}
