@@ -20,21 +20,20 @@
                         "qr_generator:",
                         "    path: /qr/generate",
                         "    controller: Xandrusoft\\QrGeneratorBundle\\Controller\\QrGeneratorController::generate",
-                        "    methods: [GET]"
+                        "    methods: [GET, POST]"
                     ],
                     "executable": false
                 },
-                "config/packages/twig.yaml": {
+                "config/packages/xandrusoft_qr_generator_twig.yaml": {
                     "contents": [
                         "twig:",
                         "    paths:",
-                        "        '%kernel.project_dir%/vendor/xandrusoft/qr-generator-bundle/Resources/views': XandrusoftQrGenerator",
-                        ""
+                        "        '%kernel.project_dir%/vendor/xandrusoft/qr-generator-bundle/Resources/views': XandrusoftQrGenerator"
                     ],
                     "executable": false
                 }
             },
-            "ref": "mockmenamexandrusoft"
+            "ref": "mockmenamexandrusoftdon"
         }
     }
 }
