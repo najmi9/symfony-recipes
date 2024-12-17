@@ -1,6 +1,6 @@
 {
   "recipes": {
-      "xandrosoft/qr-generator-bundle": [
+      "xandrusoft/qr-generator-bundle": [
           "dev-main"
       ]
   },

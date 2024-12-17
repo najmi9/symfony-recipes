@@ -1,6 +1,6 @@
 {
     "manifests": {
-        "xandrosoft/qr-generator-bundle": {
+        "xandrusoft/qr-generator-bundle": {
             "manifest": {
                 "bundles": {
                     "Xandrusoft\\QrGeneratorBundle\\QrGeneratorBundle": [
@@ -34,7 +34,7 @@
                     "executable": false
                 }
             },
-            "ref": "mockmename"
+            "ref": "mockmenamexandrusoft"
         }
     }
 }
