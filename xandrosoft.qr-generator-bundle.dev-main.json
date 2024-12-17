@@ -1,0 +1,40 @@
+{
+    "manifests": {
+        "xandrosoft/qr-generator-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Xandrusoft\\QrGeneratorBundle\\QrGeneratorBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
+                "post-install-output": [
+                    "  * Your APP is almost ready: Thanks for using qr-generator-bundle"
+                ]
+            },
+            "files": {
+                "config/routes/qr_generator_bundle.yaml": {
+                    "contents": [
+                        "qr_generator:",
+                        "    path: /qr/generate",
+                        "    controller: Xandrusoft\\QrGeneratorBundle\\Controller\\QrGeneratorController::generate",
+                        "    methods: [GET]"
+                    ],
+                    "executable": false
+                },
+                "config/packages/twig.yaml": {
+                    "contents": [
+                        "twig:",
+                        "    paths:",
+                        "        '%kernel.project_dir%/vendor/xandrusoft/qr-generator-bundle/Resources/views': XandrusoftQrGenerator",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "okgoodworkingfinethanksgod1100"
+        }
+    }
+}

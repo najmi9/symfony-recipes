@@ -1,6 +1,6 @@
 {
   "recipes": {
-      "najm19/qr-code-generator": [
+      "xandrosoft/qr-generator-bundle": [
           "dev-main"
       ]
   },
