@@ -1,0 +1,39 @@
+{
+    "manifests": {
+        "xandrusoft/landing-page-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Xandrusoft\\LandingPageBundle\\LandingPageBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
+                "post-install-output": [
+                    "  * Your APP is almost ready: Thanks for using landing-page-bundle"
+                ]
+            },
+            "files": {
+                "config/routes/landing_page.yaml": {
+                    "contents": [
+                        "landing_page:",
+                        "    resource: '@LandingPageBundle/src/Resources/config/routes.yaml'",
+                        "    prefix: /",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/xandrusoft_landing_page_twig.yaml": {
+                    "contents": [
+                        "twig:",
+                        "    paths:",
+                        "        '%kernel.project_dir%/vendor/xandrusoft/landing-page-bundle/Resources/views': XandrusoftLandingPage"
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "xFC/IlKnRGFIEcKa9Pi5Ks4xsbX3N6xD"
+        }
+    }
+}

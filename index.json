@@ -2,6 +2,10 @@
   "recipes": {
       "xandrusoft/qr-generator-bundle": [
           "dev-main"
+      ],
+      "xandrusoft/landing-page-bundle": [
+          "dev-main",
+          "1.0.0"
       ]
   },
   "branch": "main",
